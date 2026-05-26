@@ -22,6 +22,7 @@
     </script>
 
     <style>
+        html { scroll-behavior: smooth; }
         body { 
             background-color: #fcfcfd;
             -webkit-font-smoothing: antialiased; 
@@ -30,85 +31,412 @@
         }
         .backdrop-blur-2xl { backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); }
         
-        /* Ajuste de fluidez do título para evitar quebra errada */
         .fluid-title {
-            font-size: clamp(3rem, 12vw, 9.5vw);
-            line-height: 0.9;
+            font-size: clamp(2.3rem, 7.5vw, 5.2rem);
+            line-height: 0.95;
         }
-        @media (min-width: 768px) {
-            .fluid-title { line-height: 0.85; }
+        @media (min-width: 1024px) {
+            .fluid-title { 
+                line-height: 0.85; 
+            }
         }
     </style>
 </head>
 <body class="text-slate-950 font-sans selection:bg-blue-600 selection:text-white overflow-x-hidden">
 
-    <nav class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-[100] flex items-center justify-between w-[95%] md:w-[90%] max-w-7xl px-4 md:px-8 py-3 md:py-4 bg-white/90 backdrop-blur-2xl border border-slate-200/50 shadow-sm rounded-full">
-        <div class="flex items-center gap-2 shrink-0">
-            <div class="w-8 h-8 md:w-10 md:h-10 bg-slate-950 rounded-xl flex items-center justify-center text-white font-black text-sm md:text-base">G</div>
-            <span class="text-base md:text-xl font-black tracking-tighter uppercase italic text-slate-950">Growth<span class="text-blue-600">Tech</span></span>
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 z-[100] flex items-center justify-between w-[92%] lg:w-[85%] max-w-6xl px-4 md:px-8 py-3.5 bg-white/90 backdrop-blur-2xl border border-slate-200/60 shadow-sm rounded-full">
+    
+    <div class="flex items-center gap-4 md:gap-6 shrink-0 w-full lg:w-auto justify-between lg:justify-start">
+        <div class="flex items-center gap-2">
+            <div class="w-7 h-7 md:w-8 md:h-8 bg-slate-950 rounded-xl flex items-center justify-center text-white font-black text-xs md:text-sm">G</div>
+            <span class="text-sm md:text-lg font-black tracking-tighter uppercase italic text-slate-950">Growth<span class="text-blue-600">Tech</span></span>
         </div>
+        
+        <a href="pages/azul.html" target="_blank" class="lg:hidden text-[10px] font-black uppercase tracking-[1.5px] text-slate-600 hover:text-blue-600 transition-all border-l border-slate-200 pl-4 whitespace-nowrap">O Produto</a>
+    </div>
 
-        <div class="flex items-center gap-3 md:gap-10">
-            <a href="pages/azul.html" class="text-[9px] md:text-[11px] font-black uppercase tracking-[1px] md:tracking-[2px] hover:text-blue-600 transition-all whitespace-nowrap">O Produto</a>
-            <span class="hidden md:block text-blue-600 text-[11px] font-black uppercase tracking-[2px] border-b-2 border-blue-600 pb-0.5 cursor-default">Sobre a Empresa</span>
-            <a href="mailto:contato@growthtech.com" class="bg-slate-950 text-white px-4 py-2.5 md:px-7 md:py-3.5 rounded-full md:rounded-2xl hover:bg-blue-600 transition-all flex items-center gap-2 group">
-                <span class="text-[9px] md:text-[10px] font-black uppercase tracking-[1px] md:tracking-[2px]">
-                    <span class="md:hidden">Contato</span>
-                    <span class="hidden md:inline">Falar com a Engenharia</span>
-                </span>
-                <i data-lucide="chevron-right" class="w-3 h-3 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform"></i>
-            </a>
-        </div>
-    </nav>
+    <div class="hidden lg:flex items-center gap-4 xl:gap-8 mx-4">
+        <a href="pages/azul.html" target="_blank" class="text-[11px] font-black uppercase tracking-[1.5px] text-slate-600 hover:text-blue-600 transition-all whitespace-nowrap">O Produto</a>
+        <a href="#sobre" class="text-[11px] font-black uppercase tracking-[1.5px] text-slate-400 hover:text-blue-600 transition-all">Sobre</a>
+        <a href="#servicos" class="text-[11px] font-black uppercase tracking-[1.5px] text-slate-400 hover:text-blue-600 transition-all">Serviços</a>
+        <a href="#equipe" class="text-[11px] font-black uppercase tracking-[1.5px] text-slate-400 hover:text-blue-600 transition-all">Equipe</a>
+        <a href="#faq" class="text-[11px] font-black uppercase tracking-[1.5px] text-slate-400 hover:text-blue-600 transition-all">FAQ</a>
+    </div>
 
-    <section class="relative min-h-screen flex flex-col justify-center px-6 md:px-20 pt-24 md:pt-0">
-        <div class="max-w-7xl mx-auto w-full">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[8px] md:text-[10px] font-black uppercase tracking-[3px] mb-8 md:shadow-sm">
+    <div class="hidden lg:flex items-center shrink-0">
+        <a href="#contato" class="bg-slate-950 text-white px-5 py-3 rounded-full hover:bg-blue-600 transition-all flex items-center gap-1.5 group whitespace-nowrap">
+            <span class="text-[10px] font-black uppercase tracking-[1px]">Solicitar Orçamento</span>
+            <i data-lucide="chevron-right" class="w-3 h-3 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+    </div>
+</nav>
+
+    <section class="relative min-h-screen flex flex-col justify-center px-4 sm:px-8 lg:px-16 max-w-6xl mx-auto pt-32 lg:pt-0">
+        <div class="w-full text-center lg:text-left lg:max-w-4xl mx-auto lg:mx-0">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[8px] md:text-[10px] font-black uppercase tracking-[3px] mb-6 md:mb-8">
                 Laboratório de Engenharia de Software
             </div>
             
-            <h1 class="fluid-title font-black tracking-tighter uppercase mb-10 md:mb-12 break-words sm:break-normal">
-                Arquitetura <br class="block" />
-                <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent italic font-light">Digital de Elite.</span>
-            </h1>
+            <h1 class="text-[1.85rem] sm:text-[2.8rem] md:text-[4rem] lg:text-[5rem] font-black tracking-tighter uppercase mb-6 md:mb-8 break-words px-2 leading-[0.95] lg:leading-[0.85]">
+    Arquitetura <br class="hidden lg:block"/>
+    <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent italic font-light">Digital de Elite.</span>
+</h1>
+</h1>
 
-            <div class="max-w-4xl">
-                <p class="text-xl md:text-4xl font-medium text-slate-500 leading-tight tracking-tight">
-                    Transformamos códigos em <span class="text-slate-950 font-bold">ativos estratégicos</span>. <br class="hidden md:block"> 
-                    A GrowthTech é onde a engenharia pura encontra a escala global.
+            <div class="mb-10 md:mb-12">
+                <p class="text-lg md:text-2xl lg:text-3xl font-medium text-slate-500 leading-tight tracking-tight max-w-2xl mx-auto lg:mx-0">
+                    Transformamos códigos em <span class="text-slate-950 font-bold">ativos estratégicos</span>. A GrowthTech é onde a engenharia pura encontra a escala global.
                 </p>
             </div>
-        </div>
-    </section>
 
-    <section class="px-6 py-24 md:py-40 max-w-7xl mx-auto border-t border-slate-200/60">
-        <div class="mb-20 md:mb-32 text-center">
-            <span class="text-blue-600 font-black uppercase tracking-[3px] md:tracking-[5px] text-[10px]">The minds behind the code</span>
-            <h2 class="text-4xl md:text-7xl font-black mt-6 tracking-tighter uppercase leading-none text-slate-950">Corpo de <br> <span class="text-blue-600 italic font-light opacity-80">Especialistas.</span></h2>
-        </div>
-        <div id="colaboradores-grid" class="flex flex-wrap justify-center gap-x-10 md:gap-x-16 gap-y-20 md:gap-y-32"></div>
-    </section>
-
-    <section class="py-24 md:py-40 px-6 text-center bg-white border-t border-slate-100">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-[7.5rem] font-black tracking-tighter mb-12 md:mb-16 uppercase italic leading-[0.8] text-slate-950">
-                Sua Próxima <br/> <span class="text-blue-600">Grande Ideia</span> <br/> Começa Aqui.
-            </h2>
-            <div class="flex flex-wrap justify-center gap-6">
-                <a href="mailto:contato@growthtech.com?subject=Interesse em Projeto" class="bg-blue-600 text-white px-10 py-5 md:px-14 md:py-7 rounded-full font-black text-lg md:text-xl hover:scale-105 transition-all flex items-center gap-3 shadow-2xl shadow-blue-600/20">
-                    Adquirir Projeto <i data-lucide="arrow-right" class="w-5 h-5 md:w-6 md:h-6"></i>
+            <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                <a href="#contato" class="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20 text-center">
+                    Falar com Especialista
+                </a>
+                <a href="#servicos" class="w-full sm:w-auto bg-slate-100 text-slate-950 px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider hover:bg-slate-200 transition-all text-center">
+                    Conhecer Soluções
                 </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#0a0c10] py-16 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col items-center gap-8">
-            <div class="flex items-center gap-3 opacity-50 grayscale">
-                <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-black font-black text-sm">G</div>
-                <span class="text-white text-lg font-black tracking-tighter uppercase italic">GrowthTech</span>
+    <section id="sobre" class="px-4 sm:px-8 lg:px-16 py-20 md:py-32 max-w-6xl mx-auto border-t border-slate-200/60 scroll-mt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <div class="lg:col-span-5 text-center lg:text-left">
+                <span class="text-blue-600 font-black uppercase tracking-[3px] text-[10px]">Who we are</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-2 tracking-tighter uppercase text-slate-950 mb-6">Nossa <span class="text-blue-600 italic font-light opacity-80">Cultura.</span></h2>
+                <p class="text-slate-500 font-medium text-sm md:text-base leading-relaxed max-w-md mx-auto lg:mx-0">
+                    A GrowthTech nasceu para preencher o abismo entre linhas de código e objetivos de negócios de grande escala. Construímos soluções com foco em autoridade tecnológica, branding consistente e máxima confiança.
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-3">
+                    <span class="px-4 py-2 bg-slate-100 rounded-xl text-[10px] font-black uppercase tracking-wider text-slate-700 border border-slate-200/40">⚡ Confiança</span>
+                    <span class="px-4 py-2 bg-slate-100 rounded-xl text-[10px] font-black uppercase tracking-wider text-slate-700 border border-slate-200/40">💎 Branding</span>
+                    <span class="px-4 py-2 bg-slate-100 rounded-xl text-[10px] font-black uppercase tracking-wider text-slate-700 border border-slate-200/40">⚔️ Autoridade</span>
+                </div>
             </div>
-            <p class="text-[9px] md:text-[10px] font-black uppercase tracking-[3px] md:tracking-[5px] text-slate-500 text-center">
+
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="p-6 bg-white border border-slate-200/60 rounded-3xl shadow-sm">
+                    <div class="text-blue-600 mb-4"><i data-lucide="target" class="w-5 h-5"></i></div>
+                    <h3 class="text-xs font-black uppercase tracking-wider text-slate-950 mb-2">Missão</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed font-medium">Desenvolver arquiteturas de software de elite que empoderam empresas globais a escalarem sem gargalos operacionais.</p>
+                </div>
+                <div class="p-6 bg-white border border-slate-200/60 rounded-3xl shadow-sm">
+                    <div class="text-blue-600 mb-4"><i data-lucide="eye" class="w-5 h-5"></i></div>
+                    <h3 class="text-xs font-black uppercase tracking-wider text-slate-950 mb-2">Visão</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed font-medium">Ser a referência mundial em engenharia pura e laboratório conceitual para sistemas distribuídos altamente complexos.</p>
+                </div>
+                <div class="p-6 bg-white border border-slate-200/60 rounded-3xl shadow-sm">
+                    <div class="text-blue-600 mb-4"><i data-lucide="history" class="w-5 h-5"></i></div>
+                    <h3 class="text-xs font-black uppercase tracking-wider text-slate-950 mb-2">História</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed font-medium">Fundada por especialistas em infraestrutura, emergimos como um ecossistema de elite focado em entregar código limpo, performático e resiliente.</p>
+                </div>
+                <div class="p-6 bg-white border border-slate-200/60 rounded-3xl shadow-sm">
+                    <div class="text-blue-600 mb-4"><i data-lucide="award" class="w-5 h-5"></i></div>
+                    <h3 class="text-xs font-black uppercase tracking-wider text-slate-950 mb-2">Diferenciais</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed font-medium">Nossa equipe é composta estritamente por seniores, abolindo intermediários e refinando diretamente os gargalos das empresas parceiras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="px-4 sm:px-8 lg:px-16 py-20 md:py-32 max-w-6xl mx-auto border-t border-slate-200/60 scroll-mt-24">
+        <div class="mb-12 md:mb-16 text-center lg:text-left">
+            <span class="text-blue-600 font-black uppercase tracking-[3px] text-[10px]">What we deliver</span>
+            <h2 class="text-3xl md:text-5xl font-black mt-2 tracking-tighter uppercase text-slate-950">Nossas <span class="text-blue-600 italic font-light opacity-80">Capacidades.</span></h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-6">
+            <div class="p-6 bg-white border border-slate-200/60 rounded-3xl shadow-sm hover:border-blue-600/50 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-base font-black uppercase tracking-tight text-slate-950 mb-3">Desenvolvimento SaaS</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed font-medium">Modelagem e construção de ecossistemas robustos e escaláveis de microsserviços.</p>
+                </div>
+                <a href="#contato" class="mt-6 text-xs font-black uppercase tracking-wider text-blue-600 flex items-center gap-1 group-hover:gap-2 transition-all">Solicitar <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+
+            <div class="p-6 bg-white border border-slate-200/60 rounded-3xl shadow-sm hover:border-blue-600/50 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i data-lucide="help-circle" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-base font-black uppercase tracking-tight text-slate-950 mb-3">Consultoria</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed font-medium">Diagnósticos profundos em arquiteturas legadas e planejamento de modernização tecnológica.</p>
+                </div>
+                <a href="#contato" class="mt-6 text-xs font-black uppercase tracking-wider text-blue-600 flex items-center gap-1 group-hover:gap-2 transition-all">Solicitar <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+
+            <div class="p-6 bg-white border border-slate-200/60 rounded-3xl shadow-sm hover:border-blue-600/50 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-base font-black uppercase tracking-tight text-slate-950 mb-3">Inteligência Artificial</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed font-medium">Modelos preditivos e integração de LLMs para automação inteligente de processos internos.</p>
+                </div>
+                <a href="#contato" class="mt-6 text-xs font-black uppercase tracking-wider text-blue-600 flex items-center gap-1 group-hover:gap-2 transition-all">Solicitar <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+
+            <div class="p-6 bg-white border border-slate-200/60 rounded-3xl shadow-sm hover:border-blue-600/50 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-base font-black uppercase tracking-tight text-slate-950 mb-3">Automação</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed font-medium">Orquestração de pipelines inteligentes, eliminando atritos mecânicos da operação de engenharia.</p>
+                </div>
+                <a href="#contato" class="mt-6 text-xs font-black uppercase tracking-wider text-blue-600 flex items-center gap-1 group-hover:gap-2 transition-all">Solicitar <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4 sm:px-8 lg:px-16 py-20 md:py-32 max-w-6xl mx-auto border-t border-slate-200/60">
+        <div class="mb-12 md:mb-16 text-center">
+            <span class="text-blue-600 font-black uppercase tracking-[3px] text-[10px]">Engineered to surpass</span>
+            <h2 class="text-3xl md:text-5xl font-black mt-2 tracking-tighter uppercase text-slate-950">Por que a <span class="text-blue-600 italic font-light opacity-80">GrowthTech?</span></h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            <div class="p-6 bg-slate-50 border border-slate-200/60 rounded-2xl">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs mb-4">24h</div>
+                <h4 class="text-sm font-black uppercase tracking-tight text-slate-950 mb-2">Suporte 24h</h4>
+                <p class="text-slate-500 text-xs leading-relaxed font-medium">Nossa equipe monitora a integridade da sua arquitetura ininterruptamente, eliminando surpresas críticas.</p>
+            </div>
+            <div class="p-6 bg-slate-50 border border-slate-200/60 rounded-2xl">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs mb-4"><i data-lucide="gauge" class="w-4 h-4"></i></div>
+                <h4 class="text-sm font-black uppercase tracking-tight text-slate-950 mb-2">Alta Performance</h4>
+                <p class="text-slate-500 text-xs leading-relaxed font-medium">Sistemas refinados no nível do bit, garantindo respostas abaixo dos 100ms em qualquer localidade.</p>
+            </div>
+            <div class="p-6 bg-slate-50 border border-slate-200/60 rounded-2xl">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs mb-4"><i data-lucide="trending-up" class="w-4 h-4"></i></div>
+                <h4 class="text-sm font-black uppercase tracking-tight text-slate-950 mb-2">Escalabilidade</h4>
+                <p class="text-slate-500 text-xs leading-relaxed font-medium">Estruturas auto-scaling em nuvens nativas prontas para suportar picos extremos e volumetria exponencial.</p>
+            </div>
+            <div class="p-6 bg-slate-50 border border-slate-200/60 rounded-2xl">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs mb-4"><i data-lucide="lock" class="w-4 h-4"></i></div>
+                <h4 class="text-sm font-black uppercase tracking-tight text-slate-950 mb-2">Segurança</h4>
+                <p class="text-slate-500 text-xs leading-relaxed font-medium">Criptografia de ponta a ponta, blindagem de dados corporativos e adequação rígida aos moldes da LGPD.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-slate-950 text-white py-20 md:py-28 px-4 sm:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12 text-center lg:text-left">
+                <span class="text-blue-500 font-black uppercase tracking-[3px] text-[10px]">Proven Records</span>
+                <h2 class="text-2xl md:text-4xl font-black uppercase tracking-tighter mt-2">Nesta Engenharia em Resultados</h2>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 text-center">
+                <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-800/80">
+                    <div class="text-3xl md:text-5xl font-black text-blue-500 font-mono">+230%</div>
+                    <p class="text-[9px] font-bold uppercase tracking-[1.5px] text-slate-400 mt-3">Eficiência de Conversão</p>
+                </div>
+                <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-800/80">
+                    <div class="text-3xl md:text-5xl font-black font-mono">99.99%</div>
+                    <p class="text-[9px] font-bold uppercase tracking-[1.5px] text-slate-400 mt-3">Uptime de Infraestrutura</p>
+                </div>
+                <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-800/80">
+                    <div class="text-3xl md:text-5xl font-black text-blue-500 font-mono">&lt; 100ms</div>
+                    <p class="text-[9px] font-bold uppercase tracking-[1.5px] text-slate-400 mt-3">Tempo de Resposta</p>
+                </div>
+                <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-800/80">
+                    <div class="text-3xl md:text-5xl font-black font-mono">50M+</div>
+                    <p class="text-[9px] font-bold uppercase tracking-[1.5px] text-slate-400 mt-3">Requisições/Mês</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="px-4 sm:px-8 lg:px-16 py-20 md:py-32 max-w-6xl mx-auto border-t border-slate-200/60 scroll-mt-24">
+        <div class="mb-16 md:mb-20 text-center">
+            <span class="text-blue-600 font-black uppercase tracking-[3px] text-[10px]">The minds behind the code</span>
+            <h2 class="text-3xl md:text-5xl font-black mt-3 tracking-tighter uppercase text-slate-950">Integrantes da <span class="text-blue-600 italic font-light opacity-80">Equipe.</span></h2>
+        </div>
+        
+        <div id="colaboradores-grid" class="flex flex-wrap justify-center gap-x-8 gap-y-16 max-w-5xl mx-auto"></div>
+    </section>
+
+    <section class="px-4 sm:px-8 lg:px-16 py-20 md:py-32 bg-slate-50/70 border-t border-b border-slate-200/60">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12 md:mb-16 text-center">
+                <span class="text-blue-600 font-black uppercase tracking-[3px] text-[10px]">Social Proof</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-2 tracking-tighter uppercase text-slate-950">Vozes do <span class="text-blue-600 italic font-light opacity-80">Sucesso.</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="p-8 bg-white border border-slate-200/80 rounded-3xl shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 font-medium text-sm leading-relaxed italic mb-6">"A GrowthTech reformulou toda nossa infraestrutura de microsserviços. O uptime subiu drasticamente e o faturamento acompanhou a estabilidade."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-11 h-11 rounded-full bg-slate-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Diretora de Operações" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-black uppercase text-slate-950 tracking-tight">Mariana Vasconcelos</h4>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Diretora de Operações — TechCorp Global</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-white border border-slate-200/80 rounded-3xl shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 font-medium text-sm leading-relaxed italic mb-6">"A esteira de Inteligência Artificial desenhada pelo laboratório deles automatizou triagens analíticas que antes consumiam centenas de horas da nossa equipe sênior."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-11 h-11 rounded-full bg-slate-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="VP de Produto" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-black uppercase text-slate-950 tracking-tight">Guilherme Aguiar</h4>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">VP de Produto — Vanguarda SaaS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4 sm:px-8 py-24 md:py-32 bg-blue-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(99,102,241,0.4),transparent)]"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block bg-white/10 px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-[3px] mb-6">Pronto para a disrupção?</span>
+            <h2 class="text-3xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-6">Gargalos técnicos não <br>devem limitar seu crescimento.</h2>
+            <p class="text-blue-100 font-medium text-base md:text-xl max-w-2xl mx-auto mb-10">Conecte sua empresa à elite global da engenharia pura. Escolha como quer começar:</p>
+            <div class="flex flex-col sm:flex-wrap sm:flex-row justify-center gap-4 max-w-xl mx-auto">
+                <a href="#contato" class="flex-1 bg-slate-950 hover:bg-slate-900 text-white font-black uppercase tracking-wider text-xs py-4 px-6 rounded-2xl transition-all shadow-xl shadow-slate-950/20 text-center">Comece agora</a>
+                <a href="#contato" class="flex-1 bg-white hover:bg-slate-50 text-slate-950 font-black uppercase tracking-wider text-xs py-4 px-6 rounded-2xl transition-all text-center">Agendar reunião</a>
+                <a href="#contato" class="flex-1 bg-blue-700/50 hover:bg-blue-700 border border-white/20 text-white font-black uppercase tracking-wider text-xs py-4 px-6 rounded-2xl transition-all text-center">Solicitar Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="px-4 sm:px-8 lg:px-16 py-20 md:py-32 bg-slate-50 border-t border-slate-200/60 scroll-mt-24">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-blue-600 font-black uppercase tracking-[3px] text-[10px]">Clear answers</span>
+                <h2 class="text-3xl font-black tracking-tighter text-slate-950 uppercase mt-2">Perguntas Frequentes</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white border border-slate-200 p-5 md:p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-base md:text-lg font-black uppercase text-slate-950 tracking-tight flex justify-between items-center cursor-pointer group">
+                        Como funciona o escopo e entrega dos projetos?
+                        <i data-lucide="plus" class="w-5 h-5 text-blue-600 group-hover:rotate-45 transition-transform shrink-0"></i>
+                    </h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mt-3 font-medium">Trabalhamos em metodologia ágil iterativa. O desenvolvimento é focado em Sprints semanais com entregas contínuas em ambientes de homologação isolados.</p>
+                </div>
+                <div class="bg-white border border-slate-200 p-5 md:p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-base md:text-lg font-black uppercase text-slate-950 tracking-tight flex justify-between items-center cursor-pointer group">
+                        A arquitetura entregue suporta grandes picos de acessos?
+                        <i data-lucide="plus" class="w-5 h-5 text-blue-600 group-hover:rotate-45 transition-transform shrink-0"></i>
+                    </h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mt-3 font-medium">Sim. Nossas soluções contam com auto-scaling nativo na nuvem, balanceamento de carga inteligente e caching agressivo de dados para garantir performance constante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="px-4 sm:px-8 lg:px-16 py-20 md:py-32 max-w-6xl mx-auto border-t border-slate-200/60 scroll-mt-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <div class="lg:col-span-5 text-center lg:text-left">
+                <span class="text-blue-600 font-black uppercase tracking-[3px] text-[10px]">Get in touch</span>
+                <h2 class="text-3xl md:text-4xl font-black mt-2 tracking-tighter uppercase text-slate-950 mb-6">Iniciar um <br class="hidden lg:block"/><span class="text-blue-600 italic font-light">Projeto de Elite.</span></h2>
+                <p class="text-slate-500 font-medium mb-8 text-sm md:text-base leading-relaxed max-w-md mx-auto lg:mx-0">Preencha o formulário e um dos nossos arquitetos principais entrará em contato técnico nas próximas 2 horas.</p>
+                
+                <div class="space-y-4 max-w-md mx-auto lg:mx-0">
+                    <div class="flex items-center gap-4 p-4 bg-white border border-slate-200/60 rounded-2xl text-left">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0"><i data-lucide="mail" class="w-5 h-5"></i></div>
+                        <div>
+                            <p class="text-[9px] uppercase font-black text-slate-400 tracking-wider">E-mail Direto</p>
+                            <a href="mailto:contato@growthtech.com" class="text-sm font-bold text-slate-950 hover:text-blue-600">contato@growthtech.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-white border border-slate-200/60 rounded-2xl text-left">
+                        <div class="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center shrink-0"><i data-lucide="phone" class="w-5 h-5"></i></div>
+                        <div>
+                            <p class="text-[9px] uppercase font-black text-slate-400 tracking-wider">WhatsApp Corporativo</p>
+                            <a href="#" class="text-sm font-bold text-slate-950 hover:text-green-600">+55 (11) 99999-9999</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-white border border-slate-200/80 rounded-3xl p-6 md:p-8 lg:p-10 shadow-sm w-full">
+                <form action="#" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-2">Nome Completo</label>
+                            <input type="text" placeholder="Ex: Franklin Pereira" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-950 placeholder-slate-400 text-sm font-medium focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all bg-slate-50/50" required>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-2">E-mail Corporativo</label>
+                            <input type="email" placeholder="Ex: nome@empresa.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-950 placeholder-slate-400 text-sm font-medium focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all bg-slate-50/50" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-2">Telefone / WhatsApp</label>
+                        <input type="tel" placeholder="Ex: (11) 99999-9999" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-950 placeholder-slate-400 text-sm font-medium focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all bg-slate-50/50" required>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-black uppercase tracking-wider text-slate-400 mb-2">Descrição Breve do Projeto</label>
+                        <textarea rows="4" placeholder="Fale um pouco sobre as necessidades técnicas do seu sistema..." class="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-950 placeholder-slate-400 text-sm font-medium focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all bg-slate-50/50 resize-none" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black uppercase tracking-widest text-xs py-4 px-6 rounded-xl transition-all shadow-lg shadow-blue-600/10">
+                        Enviar Requisitos Técnicos
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-[#0a0c10] text-slate-400 py-16 px-4 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 mb-12">
+            
+            <div class="lg:col-span-4 flex flex-col gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-7 h-7 bg-white rounded-lg flex items-center justify-center text-black font-black text-xs">G</div>
+                    <span class="text-white text-base font-black tracking-tighter uppercase italic">GrowthTech</span>
+                </div>
+                <p class="text-xs text-slate-500 font-medium leading-relaxed max-w-xs">
+                    Engenharia de sistemas distribuídos sob medida. Soluções escaláveis de alta performance prontas para o mercado corporativo global.
+                </p>
+            </div>
+
+            <div class="lg:col-span-2 flex flex-col gap-3">
+                <h4 class="text-[10px] font-black uppercase tracking-wider text-white">Navegação</h4>
+                <ul class="text-xs space-y-2 font-medium">
+                    <li><a href="#sobre" class="hover:text-blue-500 transition-colors">Sobre</a></li>
+                    <li><a href="#servicos" class="hover:text-blue-500 transition-colors">Serviços</a></li>
+                    <li><a href="#equipe" class="hover:text-blue-500 transition-colors">Equipe</a></li>
+                    <li><a href="#faq" class="hover:text-blue-500 transition-colors">Perguntas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-2 flex flex-col gap-3">
+                <h4 class="text-[10px] font-black uppercase tracking-wider text-white">Políticas</h4>
+                <ul class="text-xs space-y-2 font-medium">
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Privacidade</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Termos de Uso</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Compliance</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col gap-3">
+                <h4 class="text-[10px] font-black uppercase tracking-wider text-white">Redes Sociais & Contato</h4>
+                <div class="flex items-center gap-4 text-xs font-medium mb-2">
+                    <a href="#" class="hover:text-blue-500 transition-colors flex items-center gap-1"><i data-lucide="linkedin" class="w-3.5 h-3.5"></i> LinkedIn</a>
+                    <a href="#" class="hover:text-blue-500 transition-colors flex items-center gap-1"><i data-lucide="instagram" class="w-3.5 h-3.5"></i> Instagram</a>
+                    <a href="#" class="hover:text-blue-500 transition-colors flex items-center gap-1"><i data-lucide="github" class="w-3.5 h-3.5"></i> GitHub</a>
+                </div>
+                <p class="text-xs font-mono text-slate-500">contato@growthtech.com</p>
+            </div>
+
+        </div>
+
+        <div class="max-w-6xl mx-auto pt-8 border-t border-slate-900/60 text-center">
+            <p class="text-[9px] font-black uppercase tracking-[3px] text-slate-600">
                 © 2026 GrowthTech Engineering Lab • High Performance Software
             </p>
         </div>
@@ -132,18 +460,18 @@
                 .replace(" Desenvolvedor", "<br>Desenvolvedor");
 
             return `
-                <div class="flex flex-col items-center group w-full sm:w-[300px]">
-                    <div class="relative w-52 h-52 md:w-60 md:h-60 mb-8 md:mb-10">
+                <div class="flex flex-col items-center group w-[280px] shrink-0">
+                    <div class="relative w-44 h-44 md:w-48 md:h-48 mb-5">
                         <div class="absolute inset-0 rounded-full bg-blue-600/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                        <div class="relative w-full h-full rounded-full overflow-hidden border-[6px] border-white shadow-[0_32px_64px_-16px_rgba(0,0,0,0.12)] bg-slate-100">
+                        <div class="relative w-full h-full rounded-full overflow-hidden border-[5px] border-white shadow-sm bg-slate-100">
                             <img src="${c.foto}" alt="${c.nome}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         </div>
                     </div>
-                    <div class="text-center px-4">
-                        <h4 class="text-xl md:text-2xl font-black tracking-tighter uppercase text-slate-950 group-hover:text-blue-600 transition-colors duration-300">
+                    <div class="text-center px-2">
+                        <h4 class="text-base md:text-lg font-black tracking-tighter uppercase text-slate-950 group-hover:text-blue-600 transition-colors duration-300">
                             ${c.nome}
                         </h4>
-                        <p class="text-slate-400 font-bold text-[9px] md:text-[10px] uppercase tracking-[2px] mt-3 md:mt-4 leading-[1.6]">
+                        <p class="text-slate-400 font-bold text-[9px] uppercase tracking-[1.5px] mt-1.5 leading-[1.5]">
                             ${cargoFormatado}
                         </p>
                     </div>
