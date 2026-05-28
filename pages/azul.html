@@ -98,359 +98,755 @@
         </div>
     </nav>
 
-    <section class="relative min-h-screen flex flex-col justify-center px-4 sm:px-8 lg:px-16 max-w-6xl mx-auto pt-32 lg:pt-0">
-        <div class="w-full text-center lg:text-left lg:max-w-4xl mx-auto lg:mx-0 fade-in-up">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[8px] md:text-[10px] font-black uppercase tracking-[3px] mb-6 md:mb-8">
-                Produto SaaS pronto para monetização
+<section class="relative min-h-screen xl:min-h-[95vh] flex flex-col justify-center px-6 md:px-12 lg:px-16 xl:px-24 w-full pt-36 pb-20 lg:py-24 overflow-hidden bg-slate-950 text-white">
+
+    <div class="absolute top-[-15%] left-[-10%] w-[70rem] h-[70rem] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-[-15%] right-[-10%] w-[80rem] h-[80rem] bg-indigo-500/10 rounded-full blur-[160px] pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:3rem_3rem] opacity-20 pointer-events-none"></div>
+
+    <div class="w-full mx-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-16 lg:gap-8 xl:gap-16 layout-fluid relative z-20">
+
+        <div class="text-center lg:text-left w-full lg:col-span-5 fade-in-up">
+            
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 font-mono text-[9px] uppercase tracking-[3px] mb-8 shadow-inner backdrop-blur-md">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping"></span> [production_ready_saas]
             </div>
             
-            <h1 class="fluid-title font-black tracking-tighter uppercase mb-6 md:mb-8 break-words px-2 text-slate-950">
-                Transforme um app <br />
-                financeiro em uma <br />
-                <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent italic font-light">máquina de receita.</span>
+            <h1 class="text-[2.4rem] sm:text-[3.6rem] md:text-[4.2rem] lg:text-[3.2rem] xl:text-[4rem] 2xl:text-[4.8rem] font-black tracking-tighter uppercase mb-6 leading-[1.02] text-white">
+                Faça de um app<br class="hidden sm:block" />
+                Financeiro, uma<br />
+                <span class="inline-block bg-gradient-to-r from-blue-400 via-sky-400 to-indigo-400 bg-clip-text text-transparent italic font-light py-1">
+                    Máquina de Receita.
+                </span>
             </h1>
 
-            <div class="mb-10 md:mb-12">
-                <p class="text-lg md:text-2xl lg:text-3xl font-medium text-slate-500 leading-tight tracking-tight max-w-2xl mx-auto lg:mx-0">
-                    A Azul Finanças é um aplicativo de gerenciamento financeiro pessoal pronto para distribuição, monetização por assinaturas e crescimento através de downloads.
+            <div class="mb-10">
+                <p class="text-base md:text-lg xl:text-xl font-medium text-slate-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    A Azul Finanças entrega uma infraestrutura mobile nativa com ecossistema premium de assinaturas. Pule meses de código e vá direto para o faturamento recorrente.
                 </p>
             </div>
 
-            <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-                <a href="#pricing" class="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20 text-center flex items-center justify-center gap-2">
-                    Adquirir Projeto <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 max-w-md mx-auto lg:max-w-none">
+                <a href="#pricing" class="group bg-blue-600 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider hover:bg-blue-500 transition-all shadow-xl shadow-blue-600/20 text-center flex items-center justify-center gap-2 duration-300">
+                    Adquirir Código Fonte 
+                    <i data-lucide="arrow-right" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"></i>
                 </a>
-                <a href="mobile.html" class="w-full sm:w-auto bg-slate-100 text-slate-950 px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider hover:bg-slate-200 transition-all text-center flex items-center justify-center gap-2">
-                    Ver Telas <i data-lucide="smartphone" class="w-4 h-4"></i>
+                <a href="mobile.html" class="bg-white/5 border border-white/10 text-white px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-wider hover:bg-white/10 transition-all text-center flex items-center justify-center gap-2 duration-300 backdrop-blur-sm">
+                    Ver Telas Ao Vivo <i data-lucide="smartphone" class="w-4 h-4"></i>
                 </a>
             </div>
         </div>
-    </section>
 
-    <section class="px-4 sm:px-8 lg:px-16 py-20 md:py-32 max-w-6xl mx-auto border-t border-slate-200/60 scroll-mt-24">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            <div class="bg-red-50/50 border border-red-100/70 rounded-3xl p-6 md:p-10 shadow-sm">
-                <span class="text-red-600 font-black text-[10px] uppercase tracking-[2px]">
-                    O Problema
-                </span>
-                <h3 class="text-xl md:text-2xl font-black mt-2 mb-4 uppercase text-slate-950">
-                    Mercado Gigante
-                </h3>
-                <p class="text-slate-500 font-medium text-sm leading-relaxed">
-                    Milhões de pessoas ainda controlam gastos usando planilhas, anotações ou memória. Isso gera desorganização financeira e cria uma enorme demanda por aplicativos simples e acessíveis.
-                </p>
-            </div>
-
-            <div class="bg-blue-50/50 border border-blue-100/70 rounded-3xl p-6 md:p-10 shadow-sm">
-                <span class="text-blue-600 font-black text-[10px] uppercase tracking-[2px]">
-                    A Solução
-                </span>
-                <h3 class="text-xl md:text-2xl font-black mt-2 mb-4 uppercase text-slate-950">
-                    SaaS Escalável
-                </h3>
-                <p class="text-slate-500 font-medium text-sm leading-relaxed">
-                    A Azul Finanças entrega organização financeira em tempo real através de um aplicativo moderno com potencial de receita recorrente por assinaturas premium.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="features" class="px-4 sm:px-8 lg:px-16 pb-20 md:pb-32 max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div class="w-full h-full lg:col-span-7 relative flex items-center justify-center lg:justify-end mt-8 lg:mt-0">
             
-            <div class="md:col-span-8 bg-slate-950 rounded-3xl p-6 md:p-10 overflow-hidden relative group min-h-[380px] md:min-h-[460px] shadow-sm">
-                <div class="relative z-10">
-                    <h3 class="text-2xl md:text-3xl font-black text-white mb-3 uppercase tracking-tight">
-                        Dashboard Inteligente
-                    </h3>
-                    <p class="text-slate-400 max-w-xs font-medium text-sm">
-                        Interface moderna com gráficos, categorias financeiras, metas e acompanhamento em tempo real.
-                    </p>
-                </div>
-                <div class="absolute bottom-[-5%] right-[-2%] w-[95%] md:w-[85%] h-[60%] md:h-[65%] transition-all duration-700 group-hover:scale-[1.02] group-hover:-translate-y-2">
-                    <div class="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border border-white/5">
-                        <img src="../media/dashboard.jpg" alt="Dashboard" class="w-full h-full object-cover object-top" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="md:col-span-4 bg-blue-600 rounded-3xl p-6 md:p-8 text-white flex flex-col justify-between min-h-[220px] shadow-sm shadow-blue-600/10">
-                <i data-lucide="download" class="w-8 h-8 fill-current opacity-90"></i>
-                <div>
-                    <h4 class="text-xl md:text-2xl font-black mb-2 leading-none uppercase">
-                        Receita <br /> Recorrente
-                    </h4>
-                    <p class="text-blue-100 font-medium text-xs">
-                        Monetização através de assinaturas premium e crescimento via downloads.
-                    </p>
-                </div>
-            </div>
-
-            <div class="md:col-span-5 bg-white border border-slate-200/60 rounded-3xl p-6 md:p-8 flex flex-col justify-between min-h-[200px] shadow-sm">
-                <div class="flex gap-3">
-                    <i data-lucide="smartphone" class="text-blue-600 w-5 h-5"></i>
-                    <i data-lucide="bell" class="text-blue-600 w-5 h-5"></i>
-                </div>
-                <div>
-                    <h4 class="text-lg md:text-xl font-black mb-2 uppercase italic text-blue-600">
-                        Aplicativo Completo
-                    </h4>
-                    <p class="text-slate-500 font-medium text-sm">
-                        Experiência mobile moderna pronta para publicação e distribuição.
-                    </p>
-                </div>
-            </div>
-
-            <div class="md:col-span-7 bg-white border border-slate-200/60 rounded-3xl p-6 md:p-8 flex items-center justify-between gap-4 shadow-sm">
-                <div class="max-w-xs">
-                    <h4 class="text-lg md:text-xl font-black mb-2 uppercase text-slate-950">
-                        Escalável
-                    </h4>
-                    <p class="text-slate-500 text-xs font-medium leading-relaxed">
-                        Estrutura preparada para expansão de usuários, novas features e aumento de receita.
-                    </p>
-                </div>
-                <i data-lucide="database" class="w-8 h-8 md:w-10 md:h-10 text-slate-200 shrink-0"></i>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="px-4 sm:px-8 lg:px-16 pb-20 md:pb-32 max-w-6xl mx-auto">
-        <div class="bg-white border border-slate-200/60 rounded-3xl p-6 md:p-12 lg:p-16 overflow-hidden relative shadow-sm">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div class="absolute w-[30rem] h-[30rem] bg-blue-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+            
+            <div class="w-full lg:w-[110%] xl:w-[115%] rounded-[2rem] shadow-2xl border border-white/10 bg-slate-900/60 p-2 group relative transition-all duration-700 hover:border-blue-500/30 backdrop-blur-md transform hover:-translate-y-2">
                 
-                <div class="relative z-10 text-center lg:text-left">
-                    <span class="text-blue-600 font-black uppercase tracking-[3px] text-[10px]">
-                        Benefício Comercial
-                    </span>
-                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-black mt-4 mb-4 md:mb-6 tracking-tighter leading-none text-slate-950 uppercase">
-                        Produto pronto <br class="hidden md:block" /> para venda.
-                    </h2>
-                    <p class="text-slate-500 text-sm md:text-base font-medium leading-relaxed max-w-md mx-auto lg:mx-0">
-                        Economize meses de desenvolvimento adquirindo um SaaS já estruturado com foco em monetização.
-                    </p>
-                    
-                    <div class="mt-6 md:mt-8 flex flex-wrap justify-center lg:justify-start gap-2">
-                        <div class="px-3 py-1.5 bg-slate-100 rounded-xl font-bold text-[10px] text-slate-500 font-mono border border-slate-200/40">
-                            /subscription_ready
-                        </div>
-                        <div class="px-3 py-1.5 bg-slate-100 rounded-xl font-bold text-[10px] text-slate-500 font-mono border border-slate-200/40">
-                            /mobile_experience
-                        </div>
+                <div class="flex items-center justify-between px-4 pb-3 pt-2 border-b border-white/5 mb-3">
+                    <div class="flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-red-500/40"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/40"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-green-500/40"></span>
+                    </div>
+                    <div class="flex items-center gap-1.5 text-[9px] font-mono font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded border border-emerald-500/20">
+                        LIVE_SYSTEM_ACTIVE
                     </div>
                 </div>
+                
+                <div class="overflow-hidden rounded-2xl bg-slate-950 relative">
+                    <img src="../media/dashboard.jpg"
+                         alt="Interface Interna do App Azul Finanças"
+                         class="w-full h-[460px] xl:h-[540px] object-cover object-top transition-transform duration-1000 group-hover:scale-[1.01] brightness-[0.85] contrast-[1.05]">
+                         
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                </div>
 
-                <div class="relative flex justify-center items-center gap-6">
-                    <a href="mobile.html" class="relative z-20 w-[160px] md:w-[180px] h-[320px] md:h-[360px] bg-slate-900 rounded-[2rem] border-[4px] border-slate-950 shadow-2xl overflow-hidden transition-transform hover:-translate-y-3 block">
-                        <img src="../media/mobile/mobile-1.PNG" alt="Tela Mobile" class="w-full h-full object-cover" />
-                    </a>
-                    <div class="absolute z-10 w-[160px] h-[320px] bg-slate-200 rounded-[2rem] border-[4px] border-slate-950 opacity-20 blur-[0.5px] translate-x-20 overflow-hidden hidden sm:block">
-                        <img src="../media/mobile/mobile-2.PNG" alt="Tela Mobile" class="w-full h-full object-cover" />
-                    </div>
+                <div class="absolute -left-6 md:-left-12 bottom-[-8%] w-[150px] md:w-[180px] h-[300px] md:h-[360px] bg-slate-950 rounded-[2.2rem] border-[5px] border-slate-900 shadow-2xl overflow-hidden hidden sm:block transform -rotate-6 transition-all duration-500 group-hover:rotate-0 group-hover:scale-105 group-hover:border-blue-500/50">
+                    <div class="w-full h-4 bg-slate-900 flex justify-center items-center">
+                        <span class="w-12 h-1.5 rounded-full bg-slate-800"></span> </div>
+                    <img src="../media/mobile/mobile-1.PNG" alt="Tela do smartphone" class="w-full h-[calc(100%-1rem)] object-cover">
                 </div>
 
             </div>
         </div>
-    </section>
 
-    <section id="pricing" class="px-4 sm:px-8 lg:px-16 pb-20 md:pb-32 max-w-6xl mx-auto scroll-mt-24">
-        <div class="text-center max-w-2xl mx-auto mb-10 md:mb-14">
-            <span class="text-blue-600 font-black text-[10px] uppercase tracking-[3px]">
-                Monetização SaaS
+    </div>
+</section>
+
+<section class="relative w-full px-6 md:px-12 lg:px-16 xl:px-24 py-20 md:py-32 border-t border-slate-200/60 scroll-mt-24 bg-white">
+    
+    <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 layout-fluid">
+        
+        <div class="bg-red-50/40 border border-red-100/70 rounded-[2rem] p-8 md:p-12 shadow-sm transition-all duration-300 hover:shadow-md">
+            <span class="text-red-600 font-black text-[10px] uppercase tracking-[2px]">
+                O Problema
             </span>
-            <h2 class="text-2xl md:text-4xl font-black mt-2 uppercase tracking-tight text-slate-950">
-                Estrutura de Receita
+            <h3 class="text-2xl md:text-3xl font-black mt-2 mb-4 uppercase text-slate-950 tracking-tight">
+                Mercado Gigante
+            </h3>
+            <p class="text-slate-500 font-medium text-base leading-relaxed max-w-2xl">
+                Milhões de pessoas ainda controlam gastos usando planilhas, anotações ou memória. Isso gera desorganização financeira e cria uma enorme demanda por aplicativos simples e acessíveis.
+            </p>
+        </div>
+
+        <div class="bg-blue-50/40 border border-blue-100/70 rounded-[2rem] p-8 md:p-12 shadow-sm transition-all duration-300 hover:shadow-md">
+            <span class="text-blue-600 font-black text-[10px] uppercase tracking-[2px]">
+                A Solução
+            </span>
+            <h3 class="text-2xl md:text-3xl font-black mt-2 mb-4 uppercase text-slate-950 tracking-tight">
+                SaaS Escalável
+            </h3>
+            <p class="text-slate-500 font-medium text-base leading-relaxed max-w-2xl">
+                A Azul Finanças entrega organização financeira em tempo real através de um aplicativo moderno com potencial de receita recorrente por assinaturas premium.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="features" class="px-6 md:px-12 lg:px-16 xl:px-24 pb-20 md:pb-32 w-full bg-white relative">
+    <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 layout-fluid">
+        
+        <div class="md:col-span-8 bg-slate-950 rounded-[2rem] p-8 md:p-12 overflow-hidden relative group min-h-[420px] md:min-h-[500px] shadow-sm border border-slate-900">
+            <div class="relative z-10">
+                <span class="text-blue-500 font-mono text-[10px] uppercase tracking-[3px]">// Cockpit de Gestão</span>
+                <h3 class="text-3xl md:text-4xl font-black text-white mt-2 mb-4 uppercase tracking-tighter">
+                    Dashboard Inteligente
+                </h3>
+                <p class="text-slate-400 max-w-sm font-medium text-base leading-relaxed">
+                    Interface moderna estruturada com cruzamento de dados, inteligência analítica de despesas e metas financeiras dinâmicas atualizadas em tempo real.
+                </p>
+            </div>
+            
+            <div class="absolute bottom-[-10%] right-[-5%] w-[100%] md:w-[85%] h-[60%] md:h-[70%] transition-all duration-700 group-hover:scale-[1.03] group-hover:-translate-y-3">
+                <div class="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-slate-900/40 p-1 backdrop-blur-sm">
+                    <img src="../media/dashboard.jpg" alt="Dashboard Azul Finanças" class="w-full h-full object-cover object-top rounded-xl brightness-[0.95]" />
+                </div>
+            </div>
+        </div>
+
+        <div class="md:col-span-4 bg-blue-600 rounded-[2rem] p-8 md:p-10 text-white flex flex-col justify-between min-h-[280px] shadow-lg shadow-blue-600/10 relative overflow-hidden group">
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-blue-500 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+            
+            <div class="flex items-center justify-between w-full relative z-10">
+                <div class="p-3 bg-white/10 rounded-2xl backdrop-blur-md">
+                    <i data-lucide="trending-up" class="w-6 h-6 text-white"></i>
+                </div>
+                <span class="text-[10px] font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2.5 py-1 rounded-full font-bold">+24.8% MoM</span>
+            </div>
+            
+            <div class="relative z-10">
+                <h4 class="text-2xl md:text-3xl font-black mb-3 leading-none uppercase tracking-tight">
+                    Receita <br /> Recorrente
+                </h4>
+                <p class="text-blue-100 font-medium text-sm leading-relaxed">
+                    Monetização por assinaturas e compras in-app estruturadas para conversão em escala global.
+                </p>
+            </div>
+        </div>
+
+        <div class="md:col-span-5 bg-slate-50 border border-slate-200/80 rounded-[2rem] p-8 md:p-10 flex flex-col justify-between min-h-[250px] shadow-sm relative group overflow-hidden">
+            <div class="flex justify-between items-start w-full">
+                <div class="flex gap-2">
+                    <div class="p-2.5 bg-blue-50 rounded-xl border border-blue-100 text-blue-600">
+                        <i data-lucide="smartphone" class="w-5 h-5"></i>
+                    </div>
+                    <div class="p-2.5 bg-blue-50 rounded-xl border border-blue-100 text-blue-600">
+                        <i data-lucide="bell" class="w-5 h-5"></i>
+                    </div>
+                </div>
+                <div class="flex items-center gap-1.5 text-[9px] font-bold text-slate-500 bg-slate-200/60 px-3 py-1 rounded-full border border-slate-300/40">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> READY_FOR_PRODUCTION
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <h4 class="text-xl md:text-2xl font-black mb-2 uppercase text-blue-600 tracking-tight">
+                    Arquitetura Nativa
+                </h4>
+                <p class="text-slate-500 font-medium text-sm leading-relaxed">
+                    Código limpo, componentes otimizados de UI/UX e sistema nativo pronto para publicação instantânea na App Store e Google Play.
+                </p>
+            </div>
+        </div>
+
+        <div class="md:col-span-7 bg-slate-50 border border-slate-200/80 rounded-[2rem] p-8 md:p-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-sm group relative overflow-hidden">
+            <div class="max-w-md">
+                <div class="inline-block text-[9px] font-black tracking-wider text-slate-400 uppercase bg-slate-200/50 border border-slate-300/30 px-2 py-0.5 rounded mb-3">
+                    Infraestrutura Pronta
+                </div>
+                <h4 class="text-xl md:text-2xl font-black mb-2 uppercase text-slate-950 tracking-tight">
+                    Infraestrutura Sem Limites
+                </h4>
+                <p class="text-slate-500 text-sm font-medium leading-relaxed">
+                    Banco de dados otimizado e backend modelado sob moldes corporativos internacionais, garantindo estabilidade absoluta sob picos repentinos de acessos em massa.
+                </p>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm shrink-0 flex flex-col gap-2 min-w-[140px] transition-all duration-500 group-hover:border-blue-500/20">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="database" class="w-4 h-4 text-blue-600"></i>
+                    <span class="text-[10px] font-mono text-slate-400">DB_STATUS</span>
+                </div>
+                <div class="text-xl font-mono font-black text-slate-950">99.99%</div>
+                <div class="text-[9px] font-bold text-emerald-600 bg-emerald-50 border border-emerald-100 px-1.5 py-0.5 rounded text-center uppercase tracking-wide">Uptime Ativo</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="w-full px-6 md:px-12 lg:px-16 xl:px-24 pb-20 md:pb-32 bg-white relative">
+    
+    <div class="bg-blue-600 rounded-[2.5rem] p-8 md:p-16 lg:p-20 overflow-hidden relative shadow-xl shadow-blue-600/10 border border-blue-500">
+        
+        <div class="absolute -left-20 -top-20 w-[40rem] h-[40rem] bg-sky-400/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute -right-20 -bottom-20 w-[30rem] h-[30rem] bg-indigo-700/40 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div class="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center relative z-10 layout-fluid">
+            
+            <div class="text-center lg:text-left">
+                <span class="text-sky-300 font-black uppercase tracking-[3px] text-[10px] bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm border border-white/10">
+                    Benefício Comercial
+                </span>
+                
+                <h2 class="text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-black mt-6 mb-4 md:mb-6 tracking-tighter leading-[1.05] text-white uppercase">
+                    Produto pronto <br class="hidden md:block" /> para venda.
+                </h2>
+                
+                <p class="text-blue-100 text-base md:text-lg font-medium leading-relaxed max-w-md mx-auto lg:mx-0">
+                    Economize meses de desenvolvimento adquirindo um SaaS já estruturado com foco em monetização direta e recorrência.
+                </p>
+                
+                <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-3">
+                    <div class="px-3 py-1.5 bg-white/10 rounded-xl font-bold text-[10px] text-sky-200 font-mono border border-white/10 backdrop-blur-sm">
+                        /subscription_ready
+                    </div>
+                    <div class="px-3 py-1.5 bg-white/10 rounded-xl font-bold text-[10px] text-sky-200 font-mono border border-white/10 backdrop-blur-sm">
+                        /mobile_experience
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center items-center h-[360px] md:h-[420px]">
+                
+                <div class="absolute w-72 h-72 bg-sky-300/30 rounded-full blur-[80px]"></div>
+                
+                <a href="mobile.html" class="relative z-20 w-[170px] md:w-[200px] h-[340px] md:h-[400px] bg-slate-900 rounded-[2.5rem] border-[6px] border-slate-950 shadow-2xl overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:rotate-2 block group">
+                    <img src="../media/mobile/mobile-1.PNG" alt="Tela Mobile Principal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                </a>
+                
+                <div class="absolute z-10 w-[170px] md:w-[190px] h-[340px] md:h-[380px] bg-slate-900 rounded-[2.5rem] border-[6px] border-slate-950 opacity-40 translate-x-24 md:translate-x-28 translate-y-4 md:translate-y-6 rotate-6 overflow-hidden hidden sm:block shadow-xl">
+                    <img src="../media/mobile/mobile-2.PNG" alt="Tela Mobile Fundo" class="w-full h-full object-cover" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+ <section id="pricing" class="w-full px-6 md:px-12 lg:px-16 xl:px-24 py-24 md:py-32 bg-slate-50 relative overflow-hidden border-y border-slate-200/50 scroll-mt-24">
+    
+    <div class="absolute top-[-20%] left-[-10%] w-[50rem] h-[50rem] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-[-20%] right-[-10%] w-[50rem] h-[50rem] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="w-full mx-auto layout-fluid relative z-10">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 md:mb-20">
+            <span class="text-blue-600 font-mono text-[9px] uppercase tracking-[4px] bg-blue-50 border border-blue-100 px-3 py-1 rounded-full shadow-sm">
+                // Escolha seu plano
+            </span>
+            <h2 class="text-3xl md:text-5xl font-black mt-4 uppercase tracking-tighter text-slate-950">
+                Planos e Preços
+            </h2>
+            <p class="text-slate-500 text-sm md:text-base font-medium mt-3 max-w-md mx-auto">
+                Encontre o plano perfeito para organizar a sua vida financeira ou o orçamento da sua família.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
+            
+            <div class="bg-white border border-slate-200/80 rounded-[2rem] p-6 lg:p-8 flex flex-col justify-between shadow-sm transition-all duration-300 hover:shadow-md hover:border-slate-300">
+                <div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="text-lg font-black uppercase text-slate-950 tracking-tight">Plano Básico</h4>
+                            <p class="text-slate-400 text-[9px] font-bold font-mono uppercase mt-1 tracking-wider">Individual</p>
+                        </div>
+                        <span class="text-[8px] font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200/60 uppercase font-mono">Essencial</span>
+                    </div>
+                    
+                    <div class="my-6 flex items-baseline gap-1">
+                        <span class="text-3xl lg:text-4xl font-black text-slate-950 tracking-tight">R$ 29,90</span>
+                        <span class="text-slate-400 text-xs font-medium">/mês</span>
+                    </div>
+                    
+                    <ul class="space-y-3 text-xs lg:text-sm text-slate-600 border-t border-slate-100 pt-5">
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
+                            <span class="font-medium text-slate-700">1 Usuário cadastrado</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
+                            <span class="font-medium text-slate-700">Controle de contas essencial</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
+                            <span class="font-medium text-slate-700">Gráficos básicos de despesas</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
+                            <span class="font-medium text-slate-700">Suporte humanizado por e-mail</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-slate-950 text-white rounded-[2rem] p-6 lg:p-8 flex flex-col justify-between shadow-xl border border-slate-900 relative overflow-hidden group transition-all duration-300 hover:scale-[1.02]">
+                <div class="absolute -right-10 -top-10 w-32 h-32 bg-blue-600/20 rounded-full blur-2xl pointer-events-none"></div>
+                
+                <div class="relative z-10">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="text-lg font-black uppercase tracking-tight text-white">Plano Familiar</h4>
+                            <p class="text-blue-400 text-[9px] font-bold font-mono uppercase mt-1 tracking-wider">Finanças em conjunto</p>
+                        </div>
+                        <span class="text-[8px] font-black text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-md border border-blue-500/20 tracking-wide uppercase font-mono">Mais Escolhido</span>
+                    </div>
+                    
+                    <div class="my-6 flex items-baseline gap-1">
+                        <span class="text-3xl lg:text-4xl font-black text-white tracking-tight">R$ 59,90</span>
+                        <span class="text-slate-400 text-xs font-medium">/mês</span>
+                    </div>
+                    
+                    <ul class="space-y-3 text-xs lg:text-sm text-slate-300 border-t border-white/10 pt-5">
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                            <span class="font-medium text-white">Até 3 Usuários simultâneos</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                            <span class="font-medium text-white">Gestão compartilhada de saldo</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                            <span class="font-medium text-white">Metas automáticas de economia</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                            <span class="font-medium text-white">Suporte prioritário via WhatsApp</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200/80 rounded-[2rem] p-6 lg:p-8 flex flex-col justify-between shadow-sm transition-all duration-300 hover:shadow-md hover:border-slate-300">
+                <div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="text-lg font-black uppercase text-slate-950 tracking-tight">Premium VIP</h4>
+                            <p class="text-slate-400 text-[9px] font-bold font-mono uppercase mt-1 tracking-wider">Total e Irrestrito</p>
+                        </div>
+                        <span class="text-[8px] font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200/60 uppercase font-mono">Completo</span>
+                    </div>
+                    
+                    <div class="my-6 flex items-baseline gap-1">
+                        <span class="text-3xl lg:text-4xl font-black text-slate-950 tracking-tight">R$ 99,90</span>
+                        <span class="text-slate-400 text-xs font-medium">/mês</span>
+                    </div>
+                    
+                    <ul class="space-y-3 text-xs lg:text-sm text-slate-600 border-t border-slate-100 pt-5">
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
+                            <span class="font-medium text-slate-700">Até 10 Usuários inclusos</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
+                            <span class="font-medium text-slate-700">Controle total sem limites</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
+                            <span class="font-medium text-slate-700">Análise e relatórios mensais</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
+                            <span class="font-medium text-slate-700">Backup em nuvem em tempo real</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="w-full px-6 md:px-12 lg:px-16 xl:px-24 py-24 md:py-32 bg-slate-50 relative overflow-hidden border-b border-slate-200/60">
+    
+    <div class="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-blue-500/[0.02] to-transparent pointer-events-none"></div>
+
+    <div class="w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 xl:gap-16 items-start layout-fluid relative z-10">
+        
+        <div class="lg:col-span-5 w-full text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-600 text-[9px] font-black uppercase tracking-[2px] mb-6 shadow-sm">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Análise de Viabilidade Técnica
+            </div>
+            
+            <h2 class="text-3xl md:text-5xl lg:text-4xl xl:text-5xl font-black uppercase tracking-tighter leading-[1.05] text-slate-950">
+                Por que investir <br class="hidden lg:block" /> 
+                na Azul Finanças <br class="hidden lg:block" /> 
+                ao invés de criar?
+            </h2>
+            
+            <p class="mt-6 text-slate-500 font-medium text-base md:text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
+                O maior risco de um software não é o código, é o tempo. Veja o diagnóstico comparativo entre o pronto e o hipotético.
+            </p>
+
+            <div class="mt-8 pt-8 border-t border-slate-200/80 hidden lg:flex items-center gap-6">
+                <div>
+                    <div class="text-3xl font-mono font-black text-blue-600">00 dias</div>
+                    <div class="text-[10px] font-mono uppercase tracking-wider text-slate-400 mt-0.5">Time-to-Market Azul</div>
+                </div>
+                <div class="w-px h-10 bg-slate-200"></div>
+                <div>
+                    <div class="text-3xl font-mono font-black text-slate-400">120+ dias</div>
+                    <div class="text-[10px] font-mono uppercase tracking-wider text-slate-400 mt-0.5">Time-to-Market do Zero</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-7 w-full">
+            <div class="w-full bg-white border border-slate-200/80 rounded-[2rem] shadow-xl shadow-slate-200/50 overflow-hidden">
+                
+                <div class="bg-slate-50/80 border-b border-slate-200/80 px-6 py-4 flex items-center justify-between">
+                    <span class="text-[11px] font-mono font-black text-slate-400 uppercase tracking-wider">Métrica de Eficiência</span>
+                    <div class="flex gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                        <span class="w-2 h-2 rounded-full bg-slate-200"></span>
+                    </div>
+                </div>
+
+                <div class="divide-y divide-slate-100">
+                    
+                    <div class="p-6 md:p-8 grid grid-cols-1 sm:grid-cols-12 gap-4 items-center transition-all duration-300 hover:bg-slate-50/50">
+                        <div class="sm:col-span-4">
+                            <span class="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">Dimensão</span>
+                            <h4 class="text-base font-black text-slate-950 uppercase tracking-tight">Tempo de Lançamento</h4>
+                        </div>
+                        <div class="sm:col-span-4 bg-emerald-50/60 border border-emerald-100 rounded-2xl p-4">
+                            <span class="text-[9px] font-black tracking-widest text-emerald-600 uppercase block mb-0.5">Azul Finanças</span>
+                            <div class="text-base font-black text-emerald-700 flex items-center gap-1.5">
+                                <i data-lucide="zap" class="w-4 h-4 fill-current"></i> IMEDIATO
+                            </div>
+                        </div>
+                        <div class="sm:col-span-4 bg-slate-50 border border-slate-200/60 rounded-2xl p-4">
+                            <span class="text-[9px] font-black tracking-widest text-slate-400 uppercase block mb-0.5">Do Zero</span>
+                            <div class="text-sm font-medium text-slate-500">Meses de agonia e testes</div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 md:p-8 grid grid-cols-1 sm:grid-cols-12 gap-4 items-center transition-all duration-300 hover:bg-slate-50/50">
+                        <div class="sm:col-span-4">
+                            <span class="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">Dimensão</span>
+                            <h4 class="text-base font-black text-slate-950 uppercase tracking-tight">Monetização SaaS</h4>
+                        </div>
+                        <div class="sm:col-span-4 bg-emerald-50/60 border border-emerald-100 rounded-2xl p-4">
+                            <span class="text-[9px] font-black tracking-widest text-emerald-600 uppercase block mb-0.5">Azul Finanças</span>
+                            <div class="text-base font-black text-emerald-700 flex items-center gap-1.5">
+                                <i data-lucide="check-circle" class="w-4 h-4"></i> JÁ ESTRUTURADA
+                            </div>
+                        </div>
+                        <div class="sm:col-span-4 bg-slate-50 border border-slate-200/60 rounded-2xl p-4">
+                            <span class="text-[9px] font-black tracking-widest text-slate-400 uppercase block mb-0.5">Do Zero</span>
+                            <div class="text-sm font-medium text-slate-500">Exige gateways e regras</div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 md:p-8 grid grid-cols-1 sm:grid-cols-12 gap-4 items-center transition-all duration-300 hover:bg-slate-50/50">
+                        <div class="sm:col-span-4">
+                            <span class="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">Dimensão</span>
+                            <h4 class="text-base font-black text-slate-950 uppercase tracking-tight">Investimento Total</h4>
+                        </div>
+                        <div class="sm:col-span-4 bg-emerald-50/60 border border-emerald-100 rounded-2xl p-4">
+                            <span class="text-[9px] font-black tracking-widest text-emerald-600 uppercase block mb-0.5">Azul Finanças</span>
+                            <div class="text-base font-black text-emerald-700 flex items-center gap-1.5">
+                                <i data-lucide="shield" class="w-4 h-4"></i> CUSTO FIXO REDUZIDO
+                            </div>
+                        </div>
+                        <div class="sm:col-span-4 bg-slate-50 border border-slate-200/60 rounded-2xl p-4">
+                            <span class="text-[9px] font-black tracking-widest text-slate-400 uppercase block mb-0.5">Do Zero</span>
+                            <div class="text-sm font-medium text-slate-500">Dezenas de milhares de Reais</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+ <section class="w-full px-6 md:px-12 lg:px-16 xl:px-24 py-24 md:py-36 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 relative overflow-hidden text-white border-b border-slate-900">
+    
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#334155_1px,transparent_1px),linear-gradient(to_bottom,#334155_1px,transparent_1px)] bg-[size:5rem_5rem] opacity-20 pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60rem] h-[30rem] bg-blue-500/10 rounded-full blur-[160px] pointer-events-none"></div>
+
+    <div class="w-full mx-auto layout-fluid relative z-10">
+        
+        <div class="flex flex-col items-center text-center mb-16 md:mb-24">
+            <span class="text-blue-400 font-mono text-[9px] uppercase tracking-[4px] bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                // Performance & Escabilidade
+            </span>
+            <h2 class="text-2xl md:text-4xl font-black uppercase mt-4 tracking-tighter text-white max-w-xl">
+                O Potencial Matemático do Projeto
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 items-stretch">
             
-            <div class="bg-white border border-slate-200/60 rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-sm">
+            <div class="bg-white/[0.02] border border-white/5 rounded-3xl p-8 flex flex-col justify-between relative group transition-all duration-300 hover:border-blue-500/30 hover:bg-white/[0.04]">
+                <div class="absolute top-4 right-4 text-slate-700 font-mono text-xs">01/</div>
                 <div>
-                    <h4 class="text-lg font-black uppercase text-slate-950">Plano Gratuito</h4>
-                    <p class="text-slate-400 text-[10px] font-bold font-mono uppercase mt-0.5">Entrada de usuários</p>
-                    
-                    <div class="my-6">
-                        <span class="text-3xl md:text-4xl font-black text-slate-950">R$ 0</span>
-                    </div>
-                    
-                    <ul class="space-y-3 text-xs md:text-sm text-slate-600 border-t border-slate-100 pt-5">
-                        <li class="flex items-center gap-2.5">
-                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
-                            Controle financeiro básico
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
-                            Registro de gastos
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i>
-                            Dashboard simples
-                        </li>
-                    </ul>
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mb-4 shadow-lg shadow-blue-500/50"></div>
+                    <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Escala de Mercado</span>
+                    <h4 class="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter group-hover:text-blue-400 transition-colors duration-300">
+                        +50k
+                    </h4>
                 </div>
+                <p class="text-slate-400 font-medium text-sm mt-6 leading-relaxed border-t border-white/5 pt-4">
+                    Downloads projetados com base no vácuo de aplicativos financeiros simples nas stores.
+                </p>
             </div>
 
-            <div class="bg-slate-950 text-white rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-xl">
+            <div class="bg-blue-600/10 border border-blue-500/30 rounded-3xl p-8 flex flex-col justify-between relative group transition-all duration-300 hover:bg-blue-600/20 shadow-xl shadow-blue-950/50">
+                <div class="absolute top-4 right-4 text-blue-400 font-mono text-xs">02/</div>
                 <div>
-                    <h4 class="text-lg font-black uppercase">Plano Premium</h4>
-                    <p class="text-blue-400 text-[10px] font-bold font-mono uppercase mt-0.5">Receita recorrente</p>
-                    
-                    <div class="my-6">
-                        <span class="text-3xl md:text-4xl font-black text-white">R$ 19,90</span>
-                        <span class="text-slate-400 text-xs md:text-sm">/mês</span>
+                    <div class="flex gap-1 mb-4 items-end h-4 w-12">
+                        <div class="bg-blue-500/30 h-[40%] w-full rounded-sm"></div>
+                        <div class="bg-blue-500/50 h-[65%] w-full rounded-sm"></div>
+                        <div class="bg-blue-400 h-[94%] w-full rounded-sm animate-pulse"></div>
                     </div>
-                    
-                    <ul class="space-y-3 text-xs md:text-sm text-slate-300 border-t border-white/10 pt-5">
-                        <li class="flex items-center gap-2.5">
-                            <i data-lucide="check" class="w-4 h-4 text-blue-500 shrink-0"></i>
-                            Metas financeiras
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <i data-lucide="check" class="w-4 h-4 text-blue-500 shrink-0"></i>
-                            Relatórios avançados
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <i data-lucide="check" class="w-4 h-4 text-blue-500 shrink-0"></i>
-                            Backup em nuvem
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <i data-lucide="check" class="w-4 h-4 text-blue-500 shrink-0"></i>
-                            Categorias ilimitadas
-                        </li>
-                    </ul>
+                    <span class="text-[10px] font-mono text-blue-300 uppercase tracking-wider block mb-1">Fidelização Clientes</span>
+                    <h4 class="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter">
+                        94%
+                    </h4>
                 </div>
+                <p class="text-blue-100 font-medium text-sm mt-6 leading-relaxed border-t border-blue-500/20 pt-4">
+                    Retenção estimada para a versão Premium devido aos recursos nativos de nuvem e metas.
+                </p>
+            </div>
+
+            <div class="bg-white/[0.02] border border-white/5 rounded-3xl p-8 flex flex-col justify-between relative group transition-all duration-300 hover:border-blue-500/30 hover:bg-white/[0.04]">
+                <div class="absolute top-4 right-4 text-slate-700 font-mono text-xs">03/</div>
+                <div>
+                    <div class="inline-block text-[9px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded mb-4">
+                        RECURRING_ENGINE
+                    </div>
+                    <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">Modelo de Negócio</span>
+                    <h4 class="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase group-hover:text-blue-400 transition-colors duration-300">
+                        SaaS
+                    </h4>
+                </div>
+                <p class="text-slate-400 font-medium text-sm mt-6 leading-relaxed border-t border-white/5 pt-4">
+                    Arquitetura escalável construída sob modelo de receita recorrente e acumulável por assinaturas.
+                </p>
             </div>
 
         </div>
-    </section>
 
-    <section class="px-4 sm:px-8 lg:px-16 pb-20 md:pb-32 max-w-4xl mx-auto">
-        <div class="text-center mb-8">
-            <h3 class="text-xl md:text-2xl font-black uppercase text-slate-950 tracking-tight">
-                Por que investir na Azul Finanças?
-            </h3>
-        </div>
+    </div>
+</section>
 
-        <div class="border border-slate-200/60 rounded-2xl overflow-x-auto bg-white shadow-sm">
-            <table class="w-full text-left text-xs md:text-sm min-w-[500px]">
-                <thead class="bg-slate-50 border-b border-slate-200/60 font-black uppercase text-slate-500">
-                    <tr>
-                        <th class="p-4 md:p-5">Modelo</th>
-                        <th class="p-4 md:p-5 text-blue-600">Azul Finanças</th>
-                        <th class="p-4 md:p-5 text-slate-400 font-medium">Desenvolvimento do Zero</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-slate-100 text-slate-600 font-medium">
-                    <tr>
-                        <td class="p-4 md:p-5 text-slate-950 font-bold">Tempo de lançamento</td>
-                        <td class="p-4 md:p-5 text-emerald-600 font-bold">Imediato</td>
-                        <td class="p-4 md:p-5">Meses de desenvolvimento</td>
-                    </tr>
-                    <tr>
-                        <td class="p-4 md:p-5 text-slate-950 font-bold">Estrutura de monetização</td>
-                        <td class="p-4 md:p-5 text-emerald-600 font-bold">Já pronta</td>
-                        <td class="p-4 md:p-5">Precisa ser criada</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+ <section class="w-full bg-white relative overflow-hidden border-t border-slate-100">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 min-h-[480px] md:min-h-[550px] w-full">
+        
+        <a href="mobile.html" class="relative group flex flex-col justify-between p-10 md:p-16 lg:p-24 bg-gradient-to-b from-slate-50 to-slate-100/50 border-b md:border-b-0 md:border-r border-slate-200/80 overflow-hidden transition-all duration-500">
+            
+            <div class="absolute -left-10 -bottom-10 w-72 h-72 bg-blue-600/5 rounded-full blur-3xl transition-all duration-700 group-hover:bg-blue-600/10"></div>
+            
+            <div class="relative z-10 flex items-center justify-between">
+                <span class="text-blue-600 font-mono text-[10px] uppercase tracking-[3px] font-bold">// Interface do Usuário</span>
+                <div class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-950 shadow-sm group-hover:border-blue-500 group-hover:text-blue-600 transition-all duration-300 group-hover:translate-x-1">
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </div>
+            </div>
 
-    <section class="px-4 sm:px-8 lg:px-16 pb-20 md:pb-32 max-w-6xl mx-auto">
-        <div class="bg-blue-50/40 border border-blue-100 rounded-3xl p-6 md:p-10 text-center shadow-sm">
-            <span class="text-blue-600 font-black text-[10px] uppercase tracking-[3px]">
-                Potencial de Crescimento
+            <div class="relative z-10 mt-20">
+                <h3 class="text-3xl lg:text-4xl xl:text-5xl font-black text-slate-950 uppercase tracking-tighter leading-none mb-4">
+                    Explore o <br />
+                    <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent italic font-light">Front-end Mobile</span>
+                </h3>
+                <p class="text-slate-500 font-medium text-sm lg:text-base max-w-sm">
+                    Veja de perto a fluidez das telas, gráficos interativos e a experiência nativa que seus futuros assinantes vão amar.
+                </p>
+            </div>
+
+            <div class="absolute right-[-5%] bottom-[-5%] opacity-[0.03] text-slate-950 pointer-events-none transform -rotate-12 transition-transform duration-700 group-hover:scale-110 group-hover:rotate-0">
+                <i data-lucide="smartphone" class="w-64 h-64"></i>
+            </div>
+        </a>
+
+        <a href="admin.html" class="relative group flex flex-col justify-between p-10 md:p-16 lg:p-24 bg-slate-950 overflow-hidden transition-all duration-500">
+            
+            <div class="absolute -right-10 -top-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl transition-all duration-700 group-hover:bg-blue-500/20"></div>
+            
+            <div class="relative z-10 flex items-center justify-between">
+                <span class="text-blue-400 font-mono text-[10px] uppercase tracking-[3px] font-bold">// Gestão & Retenção</span>
+                <div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white shadow-sm group-hover:bg-blue-600 group-hover:border-blue-500 transition-all duration-300 group-hover:translate-x-1">
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </div>
+            </div>
+
+            <div class="relative z-10 mt-20">
+                <h3 class="text-3xl lg:text-4xl xl:text-5xl font-black text-white uppercase tracking-tighter leading-none mb-4">
+                    Domine o <br />
+                    <span class="text-blue-500 italic font-light">Painel Administrativo</span>
+                </h3>
+                <p class="text-slate-400 font-medium text-sm lg:text-base max-w-sm">
+                    Analise as métricas de receita, gerencie assinaturas ativas e controle as engrenagens do seu novo império SaaS.
+                </p>
+            </div>
+
+            <div class="absolute right-[-5%] bottom-[-5%] opacity-[0.02] text-white pointer-events-none transform -rotate-12 transition-transform duration-700 group-hover:scale-110 group-hover:rotate-0">
+                <i data-lucide="layout-dashboard" class="w-64 h-64"></i>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<section id="faq" class="w-full px-6 md:px-12 lg:px-16 xl:px-24 py-24 md:py-32 bg-slate-50 relative overflow-hidden border-t border-slate-200/60 scroll-mt-24">
+    
+    <div class="absolute bottom-[-10%] left-[-5%] w-[45rem] h-[45rem] bg-blue-500/[0.03] rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="w-full mx-auto max-w-4xl relative z-10 layout-fluid">
+        
+        <div class="text-center mb-16 md:mb-24">
+            <span class="text-blue-600 font-mono text-[9px] uppercase tracking-[4px] bg-blue-50 border border-blue-100 px-3 py-1 rounded-full shadow-sm">
+                // Suporte & Respostas
             </span>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 mt-6">
-                <div>
-                    <h4 class="text-3xl md:text-4xl font-black text-slate-950">+50 mil</h4>
-                    <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider mt-1.5">
-                        Potencial de downloads
-                    </p>
-                </div>
-                <div class="border-y sm:border-y-0 sm:border-x border-slate-200/60 py-4 sm:py-0">
-                    <h4 class="text-3xl md:text-4xl font-black text-slate-950">94%</h4>
-                    <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider mt-1.5">
-                        De retenção estimada em planos premium
-                    </p>
-                </div>
-                <div>
-                    <h4 class="text-3xl md:text-4xl font-black text-slate-950">SaaS</h4>
-                    <p class="text-slate-400 font-bold text-[10px] uppercase tracking-wider mt-1.5">
-                        Modelo escalável e recorrente
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="px-4 sm:px-8 lg:px-16 pb-20 md:pb-32 text-center max-w-3xl mx-auto">
-        <h3 class="text-2xl md:text-4xl font-black uppercase tracking-tighter mb-6 text-slate-950 px-2">
-            Pronto para monetizar um SaaS financeiro?
-        </h3>
-
-        <div class="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto sm:max-w-none">
-            <a href="mobile.html" class="inline-flex bg-white border border-slate-200 text-slate-950 px-8 py-4 rounded-xl font-black text-xs uppercase tracking-wider hover:bg-slate-50 transition-all items-center gap-2 justify-center shadow-sm">
-                Ver Front-end <i data-lucide="smartphone" class="w-4 h-4"></i>
-            </a>
-            <a href="admin.html" class="inline-flex bg-slate-950 text-white px-8 py-4 rounded-xl font-black text-xs uppercase tracking-wider hover:bg-blue-600 transition-all shadow-md items-center gap-2 justify-center">
-                Ver Painel Admin <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
-            </a>
-        </div>
-    </section>
-
-    <section id="faq" class="px-4 sm:px-8 lg:px-16 pb-20 max-w-3xl mx-auto border-t border-slate-200/60 pt-16 scroll-mt-24">
-        <div class="text-center mb-8">
-            <span class="text-blue-600 font-black text-[10px] uppercase tracking-[3px]">
+            <h2 class="text-3xl md:text-5xl font-black mt-4 uppercase tracking-tighter text-slate-950">
                 Dúvidas Frequentes
-            </span>
-            <h2 class="text-2xl md:text-3xl font-black uppercase text-slate-950 mt-1">FAQ</h2>
+            </h2>
         </div>
 
-        <div class="space-y-3">
-            <div class="bg-white border border-slate-200/60 rounded-2xl p-5 md:p-6 shadow-sm">
-                <h4 class="font-black text-slate-950 mb-2 uppercase text-xs md:text-sm tracking-wide">
-                    O aplicativo já está pronto?
-                </h4>
-                <p class="text-slate-500 text-xs md:text-sm font-medium leading-relaxed">
-                    Sim. O projeto já possui interface funcional, dashboard administrativo e estrutura visual completa.
-                </p>
-            </div>
+        <div class="space-y-4">
+            
+            <details class="group bg-white border border-slate-200/80 rounded-2xl md:rounded-[1.5rem] shadow-sm transition-all duration-300 open:border-blue-500 open:shadow-md [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer select-none list-none">
+                    <h4 class="font-black text-slate-950 uppercase text-sm md:text-base tracking-tight pr-4 transition-colors duration-300 group-open:text-blue-600">
+                        O aplicativo já está 100% pronto?
+                    </h4>
+                    <div class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 shrink-0 transition-transform duration-300 group-open:rotate-180 group-open:bg-blue-50 group-open:text-blue-600">
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </div>
+                </summary>
+                <div class="px-6 pb-6 md:px-8 md:pb-8 border-t border-slate-100/80 pt-4">
+                    <p class="text-slate-500 font-medium text-sm md:text-base leading-relaxed">
+                        Sim, o projeto foi totalmente desenvolvido. Ele já conta com uma interface de usuário altamente funcional, dashboard de administração completo, gerenciamento de banco de dados e arquitetura visual limpa pronta para implantação.
+                    </p>
+                </div>
+            </details>
 
-            <div class="bg-white border border-slate-200/60 rounded-2xl p-5 md:p-6 shadow-sm">
-                <h4 class="font-black text-slate-950 mb-2 uppercase text-xs md:text-sm tracking-wide">
-                    Como a monetização funciona?
-                </h4>
-                <p class="text-slate-500 text-xs md:text-sm font-medium leading-relaxed">
-                    O modelo utiliza downloads gratuitos para aquisição de usuários e assinaturas premium para gerar receita recorrente.
-                </p>
-            </div>
+            <details class="group bg-white border border-slate-200/80 rounded-2xl md:rounded-[1.5rem] shadow-sm transition-all duration-300 open:border-blue-500 open:shadow-md [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer select-none list-none">
+                    <h4 class="font-black text-slate-950 uppercase text-sm md:text-base tracking-tight pr-4 transition-colors duration-300 group-open:text-blue-600">
+                        Como funciona o ecossistema de monetização?
+                    </h4>
+                    <div class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 shrink-0 transition-transform duration-300 group-open:rotate-180 group-open:bg-blue-50 group-open:text-blue-600">
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </div>
+                </summary>
+                <div class="px-6 pb-6 md:px-8 md:pb-8 border-t border-slate-100/80 pt-4">
+                    <p class="text-slate-500 font-medium text-sm md:text-base leading-relaxed">
+                        O modelo é baseado na estratégia Freemium. A entrada de novos usuários é facilitada por ferramentas básicas gratuitas, criando um funil orgânico de downloads. A receita recorrente é gerada pela conversão desses usuários para assinaturas Premium dentro do app.
+                    </p>
+                </div>
+            </details>
 
-            <div class="bg-white border border-slate-200/60 rounded-2xl p-5 md:p-6 shadow-sm">
-                <h4 class="font-black text-slate-950 mb-2 uppercase text-xs md:text-sm tracking-wide">
-                    Posso personalizar a marca?
-                </h4>
-                <p class="text-slate-500 text-xs md:text-sm font-medium leading-relaxed">
-                    Sim. O projeto pode ser adaptado visualmente para novas marcas, cores e funcionalidades.
-                </p>
-            </div>
+            <details class="group bg-white border border-slate-200/80 rounded-2xl md:rounded-[1.5rem] shadow-sm transition-all duration-300 open:border-blue-500 open:shadow-md [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer select-none list-none">
+                    <h4 class="font-black text-slate-950 uppercase text-sm md:text-base tracking-tight pr-4 transition-colors duration-300 group-open:text-blue-600">
+                        Consigo alterar as cores e aplicar a minha própria marca?
+                    </h4>
+                    <div class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 shrink-0 transition-transform duration-300 group-open:rotate-180 group-open:bg-blue-50 group-open:text-blue-600">
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </div>
+                </summary>
+                <div class="px-6 pb-6 md:px-8 md:pb-8 border-t border-slate-100/80 pt-4">
+                    <p class="text-slate-500 font-medium text-sm md:text-base leading-relaxed">
+                        Perfeitamente. O código-fonte foi estruturado de forma limpa e modular. Isso significa que você ou seu desenvolvedor podem reconfigurar a identidade visual (logos, paleta de cores, tipografia) e adicionar novas funcionalidades exclusivas em tempo recorde.
+                    </p>
+                </div>
+            </details>
+
+            <details class="group bg-white border border-slate-200/80 rounded-2xl md:rounded-[1.5rem] shadow-sm transition-all duration-300 open:border-blue-500 open:shadow-md [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer select-none list-none">
+                    <h4 class="font-black text-slate-950 uppercase text-sm md:text-base tracking-tight pr-4 transition-colors duration-300 group-open:text-blue-600">
+                        Preciso de conhecimentos avançados para gerenciar o painel?
+                    </h4>
+                    <div class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 shrink-0 transition-transform duration-300 group-open:rotate-180 group-open:bg-blue-50 group-open:text-blue-600">
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </div>
+                </summary>
+                <div class="px-6 pb-6 md:px-8 md:pb-8 border-t border-slate-100/80 pt-4">
+                    <p class="text-slate-500 font-medium text-sm md:text-base leading-relaxed">
+                        Não. O painel administrativo foi projetado com foco total em usabilidade intuitiva (No-Code Operations). Você conseguirá monitorar os índices de faturamento, gerenciar os perfis dos usuários ativos e analisar métricas financeiras cruciais através de um ambiente visual totalmente simples e amigável.
+                    </p>
+                </div>
+            </details>
+
         </div>
     </section>
 
-    <footer class="bg-[#0a0c10] py-12 md:py-16 px-4 border-t border-white/5">
-        <div class="max-w-6xl mx-auto flex flex-col items-center gap-6">
-            <div class="flex items-center gap-2">
-                <div class="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center text-white font-black text-xs">
-                    A
+    <footer class="bg-[#0a0c10] text-slate-400 py-16 px-4 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 mb-12">
+            
+            <div class="lg:col-span-4 flex flex-col gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-7 h-7 bg-white rounded-lg flex items-center justify-center text-black font-black text-xs">G</div>
+                    <span class="text-white text-base font-black tracking-tighter uppercase italic">GrowthTech</span>
                 </div>
-                <span class="text-white text-base font-black tracking-tighter uppercase">
-                    Azul Finanças
-                </span>
+                <p class="text-xs text-slate-500 font-medium leading-relaxed max-w-xs">
+                    Engenharia de sistemas distribuídos sob medida. Soluções escaláveis de alta performance prontas para o mercado corporativo global.
+                </p>
             </div>
-            <p class="text-[9px] font-black uppercase tracking-[2px] text-slate-500 text-center">
-                © 2026 Azul Finanças • SaaS Financeiro Escalável
+
+            <div class="lg:col-span-2 flex flex-col gap-3">
+                <h4 class="text-[10px] font-black uppercase tracking-wider text-white">Navegação</h4>
+                <ul class="text-xs space-y-2 font-medium">
+                    <li><a href="#sobre" class="hover:text-blue-500 transition-colors">Sobre</a></li>
+                    <li><a href="#servicos" class="hover:text-blue-500 transition-colors">Serviços</a></li>
+                    <li><a href="#equipe" class="hover:text-blue-500 transition-colors">Equipe</a></li>
+                    <li><a href="#faq" class="hover:text-blue-500 transition-colors">Perguntas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-2 flex flex-col gap-3">
+                <h4 class="text-[10px] font-black uppercase tracking-wider text-white">Políticas</h4>
+                <ul class="text-xs space-y-2 font-medium">
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Privacidade</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Termos de Uso</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition-colors">Compliance</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col gap-3">
+                <h4 class="text-[10px] font-black uppercase tracking-wider text-white">Redes Sociais & Contato</h4>
+                <div class="flex items-center gap-4 text-xs font-medium mb-2">
+                    <a href="#" class="hover:text-blue-500 transition-colors flex items-center gap-1"><i data-lucide="linkedin" class="w-3.5 h-3.5"></i> LinkedIn</a>
+                    <a href="#" class="hover:text-blue-500 transition-colors flex items-center gap-1"><i data-lucide="instagram" class="w-3.5 h-3.5"></i> Instagram</a>
+                    <a href="#" class="hover:text-blue-500 transition-colors flex items-center gap-1"><i data-lucide="github" class="w-3.5 h-3.5"></i> GitHub</a>
+                </div>
+                <p class="text-xs font-mono text-slate-500">contato@growthtech.com</p>
+            </div>
+
+        </div>
+
+        <div class="max-w-6xl mx-auto pt-8 border-t border-slate-900/60 text-center">
+            <p class="text-[9px] font-black uppercase tracking-[3px] text-slate-600">
+                © 2026 GrowthTech Engineering Lab • High Performance Software
             </p>
         </div>
     </footer>
